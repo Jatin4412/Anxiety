@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anxiety Relief Cube</title>
+    <title>Fidget Cube</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f0f5f9;
             color: #333;
         }
 
         header {
-            background-color: #00587a;
+            background-color: #55a0e4;
             color: #fff;
             text-align: center;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h1, h2 {
-            color: #00587a;
+            color: #55a0e4;
         }
 
-        section {
+        .container {
             margin: 20px;
             padding: 20px;
             background-color: #fff;
@@ -33,84 +32,65 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        form {
-            display: flex;
-            gap: 10px;
+        p {
+            line-height: 1.6;
         }
 
-        button {
-            background-color: #00587a;
+        .cta-button {
+            display: inline-block;
+            background-color: #55a0e4;
             color: #fff;
-            border: none;
-            padding: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        #uploaded-designs {
-            background-color: #eee;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        #design-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .uploaded-design {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Anxiety Relief Cube</h1>
-        <p>Find Calmness in Every Touch</p>
+        <h1>Fidget Cube</h1>
     </header>
 
-    <!-- Anxiety Relief Cube Information -->
-    <section>
-        <h2>Welcome to Anxiety Relief Cube!</h2>
+    <div class="container">
+        <h2>About Fidget Cube</h2>
         <p>
-            Discover a sense of calmness with our anxiety relief cube. Explore its features and share your experience.
+            In a world where anxiety affects many, our Fidget Cube offers a simple solution.
+            Find comfort and focus through tactile engagement.
         </p>
-    </section>
+        <a class="cta-button" href="how-it-works.html">How It Works</a>
+    </div>
 
-    <!-- Anxiety Relief Cube Upload -->
-    <section>
-        <h2>Share Your Experience</h2>
+    <div class="container">
+        <h2>Anxiety Stats</h2>
         <p>
-            Share how the anxiety relief cube has helped you. Upload your thoughts and be part of our supportive community.
+            Anxiety affects millions globally. Our Fidget Cube provides relief and a sense of calmness.
         </p>
-        <form id="design-upload-form">
-            <input type="file" id="design-upload" accept="image/*">
-            <button type="button" onclick="uploadDesign()">Share Experience</button>
-        </form>
-    </section>
+    </div>
 
-    <!-- Display Uploaded Designs (Dummy Section) -->
-    <section id="uploaded-designs">
-        <h2>Community Experiences</h2>
-        <div id="design-gallery"></div>
-    </section>
+    <div class="container">
+        <h2>Reviews</h2>
+        <p>
+            "The Fidget Cube changed my life. It's a small device with a big impact!"
+        </p>
+        <p>
+            "I never thought something so simple could make such a difference. Highly recommended!"
+        </p>
+    </div>
 
-    <script>
-        // Dummy function to display uploaded designs (replace with actual logic)
-        function displayUploadedDesigns() {
-            document.getElementById('design-gallery').innerHTML = '<p>No experiences shared yet (dummy data).</p>';
-        }
+    <div class="container">
+        <h2>Customize Your Cube</h2>
+        <p>
+            Personalize your Fidget Cube to match your needs. Share your design ideas with us!
+        </p>
+        <a class="cta-button" href="customize.html">Customize Now</a>
+    </div>
 
-        // Check login status on page load
-        window.onload = function() {
-            // Dummy function to display uploaded designs after some time (replace with actual logic)
-            setTimeout(displayUploadedDesigns, 3000);
-        };
-    </script>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+            Have questions or need assistance? Contact our team for support.
+        </p>
+        <a class="cta-button" href="contact.html">Contact</a>
+    </div>
 </body>
 </html>
