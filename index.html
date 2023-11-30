@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fidget Cube Website</title>
+    <title>Creative Hub</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            margin: 20px;
-            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
         }
 
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         h1, h2 {
-            color: #0066cc;
+            color: #333;
         }
 
         section {
-            margin-bottom: 20px;
+            margin: 20px;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         form {
@@ -39,7 +48,10 @@
         }
 
         #uploaded-designs {
-            background-color: #f0f0f0;
+            background-color: #eee;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         #design-gallery {
@@ -57,23 +69,24 @@
     </style>
 </head>
 <body>
-    <h1>Fidget Cube Website</h1>
-    <p>Welcome to our website where you can learn about the fidget cube and upload your custom designs!</p>
+    <header>
+        <h1>Creative Hub</h1>
+        <p>Explore, Create, Innovate</p>
+    </header>
 
-    <!-- Fidget Cube Information -->
+    <!-- Creative Hub Information -->
     <section>
-        <h2>Fidget Cube Information</h2>
+        <h2>Welcome to Creative Hub!</h2>
         <p>
-            The fidget cube is a handheld device designed to provide sensory stimulation.
-            It features various tactile elements such as switches, buttons, and a fidget spinner.
+            Unleash your creativity in our creative hub. Discover innovative designs and upload your own creations!
         </p>
     </section>
 
-    <!-- Custom Design Upload -->
+    <!-- Creative Design Upload -->
     <section>
-        <h2>Upload Custom Design</h2>
+        <h2>Upload Your Creative Design</h2>
         <p>
-            Share your creativity! Upload your own custom design for the fidget cube.
+            Share your unique creations with the world. Upload your own design and be part of our creative community.
         </p>
         <form id="design-upload-form">
             <input type="file" id="design-upload" accept="image/*">
@@ -83,7 +96,7 @@
 
     <!-- Display Uploaded Designs (Dummy Section) -->
     <section id="uploaded-designs">
-        <h2>Uploaded Designs</h2>
+        <h2>Discover Creative Designs</h2>
         <div id="design-gallery"></div>
     </section>
 
