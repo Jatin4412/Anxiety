@@ -6,27 +6,22 @@
     <title>Fidget Cube</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            background-color: #f8d7da;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #dbe6f5;
-            color: #333;
         }
 
         header {
-            background-color: #55a0e4;
+            background-color: #721c24;
             color: #fff;
             text-align: center;
             padding: 20px;
             position: relative;
         }
 
-        header a {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            color: #fff;
-            text-decoration: none;
+        h1 {
+            margin: 0;
         }
 
         .container {
@@ -35,7 +30,11 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: relative;
+            margin-top: 20px;
+        }
+
+        h2, h3 {
+            color: #721c24;
         }
 
         p {
@@ -44,59 +43,57 @@
 
         .cta-button {
             display: inline-block;
-            background-color: #55a0e4;
+            background-color: #721c24;
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .stats-box {
+            background-color: #f8d7da;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .stats-text {
+            font-size: 20px; /* Adjust the font size as needed */
+        }
+
+        .benefits {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Fidget Cube</h1>
+        <a class="cta-button" href="how-it-works.html">How It Works</a>
     </header>
 
     <div class="container">
-        <h2>About Fidget Cube</h2>
-        <p>
-            In a world where anxiety affects many, our Fidget Cube offers a simple solution.
-            Find comfort and focus through tactile engagement.
-        </p>
-        <a class="cta-button" href="how-it-works.html">How It Works</a>
-    </div>
+        <div class="stats-box">
+            <p class="stats-text">Overcome stress and anxiety with the Fidget Cube.</p>
+        </div>
 
-    <div class="container">
-        <h2>Anxiety Stats</h2>
+        <h2>Welcome to the World of Fidgeting!</h2>
         <p>
-            Anxiety affects millions globally. Our Fidget Cube provides relief and a sense of calmness.
+            Explore the benefits of using the Fidget Cube to improve focus and relaxation.
         </p>
-    </div>
 
-    <div class="container">
-        <h2>Reviews</h2>
-        <p>
-            "The Fidget Cube changed my life. It's a small device with a big impact!"
-        </p>
-        <p>
-            "I never thought something so simple could make such a difference. Highly recommended!"
-        </p>
-    </div>
-
-    <div class="container">
-        <h2>Customize Your Cube</h2>
-        <p>
-            Personalize your Fidget Cube to match your needs. Share your design ideas with us!
-        </p>
-        <a class="cta-button" href="customize.html">Customize Now</a>
-    </div>
-
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>
-            Have questions or need assistance? Contact our team for support.
-        </p>
-        <a class="cta-button" href="contact.html">Contact</a>
+        <div class="benefits">
+            <h3>Key Benefits:</h3>
+            <ul>
+                <li>Enhances concentration</li>
+                <li>Reduces stress</li>
+                <li>Calms anxiety</li>
+                <li>Boosts productivity</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
