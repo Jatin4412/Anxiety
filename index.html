@@ -68,10 +68,15 @@
             margin-top: 20px;
         }
 
-        .contact-link {
-            color: #007bff;
-            text-decoration: underline;
-            cursor: pointer;
+        .reviews {
+            margin-top: 20px;
+        }
+
+        .review {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
 
         .feedback {
@@ -94,15 +99,10 @@
             margin-top: 10px;
         }
 
-        .reviews {
-            margin-top: 20px;
-        }
-
-        .review {
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
+        .contact-link {
+            color: #007bff;
+            text-decoration: underline;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -132,13 +132,6 @@
             </ul>
         </div>
 
-        <div class="feedback">
-            <h3>Feedback</h3>
-            <p>We'd love to hear your thoughts. Leave us your feedback below:</p>
-            <textarea placeholder="Enter your feedback here"></textarea>
-            <button class="submit-button">Submit</button>
-        </div>
-
         <div class="reviews">
             <h3>Reviews</h3>
             <div class="review">
@@ -147,6 +140,13 @@
             <div class="review">
                 <p>Super calming. I carry it with me everywhere!</p>
             </div>
+        </div>
+
+        <div class="feedback">
+            <h3>Feedback</h3>
+            <p>We'd love to hear your thoughts. Leave us your feedback below:</p>
+            <textarea placeholder="Enter your feedback here"></textarea>
+            <button class="submit-button">Submit</button>
         </div>
 
         <div class="contact-link" onclick="window.location.href='contact.html'">Contact Us</div>
