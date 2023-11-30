@@ -7,6 +7,40 @@
     <style>
         /* Include styles from index.html for consistency */
 
+        body {
+            background-color: #f0f5f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #55a0e4;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        header a {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
         .steps-container {
             display: flex;
             justify-content: space-between;
@@ -17,6 +51,7 @@
             flex: 1;
             margin: 0 10px;
             text-align: center;
+            position: relative;
         }
 
         .step img {
@@ -25,29 +60,71 @@
             border-radius: 8px;
             margin-bottom: 10px;
         }
+
+        .step h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #55a0e4;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .home-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #55a0e4;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Fidget Cube - How It Works</h1>
+        <a class="home-button" href="index.html">Home</a>
     </header>
 
     <div class="container">
         <h2>How Fidget Cube Works</h2>
+        <p>
+            Discover the simplicity and effectiveness of the Fidget Cube. Follow the steps below to find calmness and focus.
+        </p>
         <div class="steps-container">
             <div class="step">
                 <img src="step1.jpg" alt="Step 1">
-                <p>Step 1: Hold the Fidget Cube in your hand.</p>
+                <h3>Step 1</h3>
             </div>
             <div class="step">
                 <img src="step2.jpg" alt="Step 2">
-                <p>Step 2: Engage with different tactile elements.</p>
+                <h3>Step 2</h3>
             </div>
             <div class="step">
                 <img src="step3.jpg" alt="Step 3">
-                <p>Step 3: Find calmness and focus.</p>
+                <h3>Step 3</h3>
             </div>
         </div>
+        <a class="cta-button" href="#more-details">Learn More</a>
+    </div>
+
+    <div class="container" id="more-details">
+        <h2>More Details</h2>
+        <p>
+            Explore the features and benefits of each step. The Fidget Cube is designed to provide a tactile experience for relaxation and concentration.
+        </p>
+        <!-- Add more content as needed -->
     </div>
 </body>
 </html>
