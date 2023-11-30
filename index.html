@@ -6,11 +6,53 @@
     <title>Fidget Cube Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 20px;
+            background-color: #f8f8f8;
+            color: #333;
         }
-        #design-upload {
-            display: none;
+
+        h1, h2 {
+            color: #0066cc;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            background-color: #0066cc;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #uploaded-designs {
+            background-color: #f0f0f0;
+        }
+
+        #design-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .uploaded-design {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -40,40 +82,19 @@
     </section>
 
     <!-- Display Uploaded Designs (Dummy Section) -->
-    <section id="uploaded-designs" style="display: none;">
+    <section id="uploaded-designs">
         <h2>Uploaded Designs</h2>
-        <p>Here are some of the custom designs uploaded by users:</p>
         <div id="design-gallery"></div>
     </section>
 
     <script>
-        function uploadDesign() {
-            // Dummy function for uploading design
-            alert('Design uploaded! (This is a dummy function)');
-        }
-
         // Dummy function to display uploaded designs (replace with actual logic)
         function displayUploadedDesigns() {
-            document.getElementById('uploaded-designs').style.display = 'block';
             document.getElementById('design-gallery').innerHTML = '<p>No designs available (dummy data).</p>';
-        }
-
-        // Display the design upload section if user is logged in (replace with actual authentication logic)
-        const isLoggedIn = false; // Set to true if the user is logged in
-        if (isLoggedIn) {
-            document.getElementById('design-upload').style.display = 'block';
-        }
-
-        // Dummy function to check if the user is logged in (replace with actual authentication logic)
-        function checkLoginStatus() {
-            return false;
         }
 
         // Check login status on page load
         window.onload = function() {
-            if (checkLoginStatus()) {
-                document.getElementById('design-upload').style.display = 'block';
-            }
             // Dummy function to display uploaded designs after some time (replace with actual logic)
             setTimeout(displayUploadedDesigns, 3000);
         };
