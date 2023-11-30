@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fidget Cube - Customize</title>
     <style>
+        /* Include styles from index.html for consistency */
+
         body {
-            background-color: #d6e4ec;
+            background-color: #f9ead0;
             color: #333;
-            margin: 0;
-            padding: 0;
         }
 
         header {
-            background-color: #4d6884;
+            background-color: #ffa500;
             color: #fff;
             text-align: center;
             padding: 20px;
             position: relative;
         }
 
-        h1 {
-            margin: 0;
+        header a {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            text-decoration: none;
         }
 
         .container {
@@ -30,60 +34,61 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-
-        h2, h3 {
-            color: #4d6884;
+            position: relative;
         }
 
         p {
             line-height: 1.6;
         }
 
-        .options {
+        form {
             margin-top: 20px;
         }
 
-        .option {
-            margin-bottom: 20px;
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
 
         .cta-button {
             display: inline-block;
-            background-color: #4d6884;
+            background-color: #ffa500;
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            position: absolute;
-            top: 20px;
-            right: 20px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Fidget Cube - Customize</h1>
-        <a class="cta-button" href="index.html">Home</a>
+        <a class="home-button" href="index.html">Home</a>
     </header>
 
     <div class="container">
         <h2>Customize Your Fidget Cube</h2>
-        <div class="options">
-            <div class="option">
-                <h3>Color</h3>
-                <p>Choose your favorite color or a calming, soothing hue.</p>
-            </div>
-            <div class="option">
-                <h3>Features</h3>
-                <p>Select the sides and features that suit your needs.</p>
-            </div>
-            <div class="option">
-                <h3>Engravings</h3>
-                <p>Add personalized engravings for a unique touch.</p>
-            </div>
-        </div>
+        <p>
+            Personalize your Fidget Cube by sharing your design preferences with us.
+        </p>
+        <form>
+            <label for="design-ideas">Design Ideas:</label>
+            <textarea id="design-ideas" rows="4" placeholder="Describe your design ideas..."></textarea>
+
+            <label for="upload-file">Upload Inspiration:</label>
+            <input type="file" id="upload-file" accept="image/*">
+
+            <button type="submit" class="cta-button">Submit Design</button>
+        </form>
     </div>
 </body>
 </html>
