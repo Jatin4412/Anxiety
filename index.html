@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidget Cube Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #design-upload {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fidget Cube Website</h1>
+    <p>Welcome to our website where you can learn about the fidget cube and upload your custom designs!</p>
+
+    <!-- Fidget Cube Information -->
+    <section>
+        <h2>Fidget Cube Information</h2>
+        <p>
+            The fidget cube is a handheld device designed to provide sensory stimulation.
+            It features various tactile elements such as switches, buttons, and a fidget spinner.
+        </p>
+    </section>
+
+    <!-- Custom Design Upload -->
+    <section>
+        <h2>Upload Custom Design</h2>
+        <p>
+            Share your creativity! Upload your own custom design for the fidget cube.
+        </p>
+        <form id="design-upload-form">
+            <input type="file" id="design-upload" accept="image/*">
+            <button type="button" onclick="uploadDesign()">Upload Design</button>
+        </form>
+    </section>
+
+    <!-- Display Uploaded Designs (Dummy Section) -->
+    <section id="uploaded-designs" style="display: none;">
+        <h2>Uploaded Designs</h2>
+        <p>Here are some of the custom designs uploaded by users:</p>
+        <div id="design-gallery"></div>
+    </section>
+
+    <script>
+        function uploadDesign() {
+            // Dummy function for uploading design
+            alert('Design uploaded! (This is a dummy function)');
+        }
+
+        // Dummy function to display uploaded designs (replace with actual logic)
+        function displayUploadedDesigns() {
+            document.getElementById('uploaded-designs').style.display = 'block';
+            document.getElementById('design-gallery').innerHTML = '<p>No designs available (dummy data).</p>';
+        }
+
+        // Display the design upload section if user is logged in (replace with actual authentication logic)
+        const isLoggedIn = false; // Set to true if the user is logged in
+        if (isLoggedIn) {
+            document.getElementById('design-upload').style.display = 'block';
+        }
+
+        // Dummy function to check if the user is logged in (replace with actual authentication logic)
+        function checkLoginStatus() {
+            return false;
+        }
+
+        // Check login status on page load
+        window.onload = function() {
+            if (checkLoginStatus()) {
+                document.getElementById('design-upload').style.display = 'block';
+            }
+            // Dummy function to display uploaded designs after some time (replace with actual logic)
+            setTimeout(displayUploadedDesigns, 3000);
+        };
+    </script>
+</body>
+</html>
