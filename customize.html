@@ -7,6 +7,40 @@
     <style>
         /* Include styles from index.html for consistency */
 
+        body {
+            background-color: #f0f5f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #55a0e4;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        header a {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
         form {
             margin-top: 20px;
         }
@@ -24,11 +58,32 @@
             border-radius: 4px;
             box-sizing: border-box;
         }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #55a0e4;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .home-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #55a0e4;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Fidget Cube - Customize</h1>
+        <a class="home-button" href="index.html">Home</a>
     </header>
 
     <div class="container">
